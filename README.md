@@ -1,7 +1,7 @@
 WordPress Image Watermark
 =========================
 
-Uses WordPress and Imagick to overlay text on an image and save as a separate image.
+Uses WordPress and Imagick to overlay text on an image and save as a separate image. Saving of data is incomplete at the moment. Feel free to use at your own risk.
 
 ### To use this library:
 
