@@ -30,4 +30,12 @@ class WP_Image_Editor_Imagick_Watermark extends WP_Image_Editor_Imagick {
 		return $this->image->scaleImage( $cols, $rows, $bestfit );
 	}
 
+	public function setImageFormat( $format ) {
+		return $this->image->setImageFormat( $format );
+	}
+
+	public function get_imagick_instance() {
+		return $this->image;
+	}
+
 }

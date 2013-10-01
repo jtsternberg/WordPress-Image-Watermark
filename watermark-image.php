@@ -7,13 +7,19 @@
  * @version 0.1.0
  */
 
-// Autoload helper classes
+// Autoload classes
 spl_autoload_register('Watermark_Image_Setup::autoload_helpers');
+
 // for PHP versions < 5.3
 if ( !defined( '__DIR__' ) ) {
 	define( '__DIR__', dirname( __FILE__ ) );
 }
 
+/**
+ * Initializes library and verifies that plugin requirements are met.
+ *
+ * @since 0.1.0
+ */
 class Watermark_Image_Setup {
 
 	// A single instance of this class.
@@ -33,7 +39,7 @@ class Watermark_Image_Setup {
 	}
 
 	/**
-	 * Setup our plugin
+	 * Setup our library
 	 * @since 0.1.0
 	 */
 	public function __construct() {
